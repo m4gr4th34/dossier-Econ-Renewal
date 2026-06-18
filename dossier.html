@@ -109,7 +109,7 @@
 <section>
   <div class="kicker violet">SOURCES — THE CENTREPIECE</div>
   <h2>Citation audit</h2>
-  <p class="lede">In a survey, the citations carry the verification weight: every avenue stands on its sources, so every source is checked against the primary work or triangulated through three or more independent citing works. Interested-party sources (vendor roadmaps, press releases) are marked REPORTED, not verified — the provenance is the point.</p>
+  <p class="lede"><b>DRAFT &middot; recon stage:</b> these sources are reconnaissance-gathered and <b>not yet audited</b> — every entry is FLAGGED until checked against the primary work, and several are secondary or advocacy outlets. In a survey, the citations carry the verification weight: every avenue stands on its sources, so every source is checked against the primary work or triangulated through three or more independent citing works. Interested-party sources (vendor roadmaps, press releases) are marked REPORTED, not verified — the provenance is the point.</p>
   <table>
     <thead><tr><th>#</th><th>Reference</th><th>Status</th></tr></thead>
     <tbody id="cites"></tbody>
@@ -119,7 +119,19 @@
 <section>
   <div class="kicker coral">ADVERSARIAL REVIEW</div>
   <h2>Red-team findings</h2>
-  <p class="lede">A hostile pass over the finished survey, published with it. Resolved findings were fixed before launch; open findings are stated as caveats in the avenues themselves.</p>
+  <p class="lede">A hostile pass over the finished survey, published with it. Resolved findings were fixed before launch; open findings are stated as caveats in the avenues themselves. <span class="mono">DRAFT &middot; the adversarial pass proper comes after the first full draft; the finding below is the standing recon-stage caveat.</span></p>
+
+  <!-- RECON-STAGE STANDING FINDING -->
+  <details class="finding" open>
+    <summary><span class="tag open">OPEN</span>Recon-stage: citations gathered, not yet audited; arguments labeled but not stress-tested</summary>
+    <div class="body">The claim ledger (C01&ndash;C12) is seeded but unverified: every citation is FLAGGED until checked against its primary source, and several anchors are secondary or advocacy outlets. The AI-productivity magnitude (C03) is entered as CONTESTED rather than resolved; the recursive-loop runaway (C08) is held as a FORECAST above the supported Wright's-Law cost-curve mechanism (C12), not asserted as fact; the renewal prescription (C07) and the reshoring argument (C11) are OPEN-ARGUMENTs whose counter-views are named but not yet weighed; and the governance question (C09/C10) is posed and left open, neither horn asserted. Closing this finding = completing the citation audit and running the adversarial pass over the drafted argument.</div>
+  </details>
+
+  <!-- VOCAB-ON-MACHINERY-LIST FINDING -->
+  <details class="finding">
+    <summary><span class="tag open">OPEN</span>Dossier-local verification vocabulary lives in a machinery-synced file <span class="mono">(low severity)</span></summary>
+    <div class="body">Dossier-local verification vocabulary (the ARGUMENT type; SOURCED-PENDING, CONTESTED-MAGNITUDE, OPEN-ARGUMENT statuses) lives in <span class="mono">verification/research_pipeline.md</span>, which is on the template-machinery sync list. A careless machinery port could clobber it. <b>Disposition:</b> mitigated for now by an explicit "Dossier-local (Econ-Renewal)" label so a sync surfaces a conflict rather than silently dropping it. Permanent fix — relocate dossier-local vocab off the machinery list — deferred; revisit before first release.</div>
+  </details>
 
   <!-- RESOLVED FINDING EXAMPLE -->
   <details class="finding resolved">
@@ -175,10 +187,15 @@
 //               not independently reproduced — provenance, not a pass)
 // ---------------------------------------------------------------
 const cites = [
-  ["REF1", "Author et al. — Journal Vol, Page (Year)", "V"],
-  ["REF2", "Author et al. — Journal Vol, Page (Year)", "T"],
-  ["REF5", "Vendor roadmap / press release (Year)", "R"],
-  // add all your references here
+  ["GDP",       "US/China nominal GDP 2025 — Statista; StatisticsTimes; PIIE", "F"],
+  ["GROWTH",    "China share of US GDP, growth & population peak — Euronews; NextBigFuture; StatsPanda", "F"],
+  ["ACEMOGLU",  "AI TFP magnitude (task framework) — Acemoglu, NBER w32487 (2024); McKinsey/Goldman", "F"],
+  ["PERTASK",   "Per-task AI gains ~3× Acemoglu's parameter — arXiv 2512.21316 (2025)", "F"],
+  ["UBI-OR",    "OpenResearch $1k/mo 3-yr UBI trial — Bloomberg; Fortune (2024)", "F"],
+  ["SWF",       "Alaska Permanent Fund; Bruenig 'American Solidarity Fund' — People's Policy Project; Jacobin; The Intercept", "F"],
+  ["WORLDCOIN", "World/Worldcoin UBI→proof-of-humanity pivot — Biometric Update; AMBCrypto", "R"],
+  ["WRIGHT",    "Wright's Law / experience curve, 62-tech validation + WWII causal test — Nagy/Farmer/Bui/Trancik (PLoS ONE 2013); Lafond et al. (TFSC 2018); Our World in Data", "F"],
+  // recon-stage: all flagged (F) until checked against primary sources; Worldcoin's UBI framing is interested-party (R)
 ];
 const lab = {
   V: ["VERIFIED — primary source", "v"],

@@ -34,6 +34,9 @@
   .kicker{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
   .kicker.teal{color:var(--teal)}.kicker.coral{color:var(--coral)}.kicker.violet{color:var(--violet)}
   p.lede{color:var(--ink2);max-width:66ch;margin-top:6px}
+  ol.outline{max-width:74ch;margin:16px 0;padding-left:22px}
+  ol.outline li{margin:9px 0;line-height:1.5}
+  ol.outline li .s-chip{margin:0 2px;vertical-align:1px}
 
   /* ===== survey landscape — card grid (survey-default keystone) ===== */
   .av-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-top:18px}
@@ -202,6 +205,19 @@
   </div>
 </section>
 
+<section id="outline">
+  <div class="kicker coral">DRAFT · RECON OUTLINE</div>
+  <h2>Planned sections <span class="s-chip s-open">DRAFT</span></h2>
+  <p class="lede">Reconnaissance-stage skeleton, mapped to the public <a href="dossier.html">claim ledger</a> (rows C01&ndash;C12). Sections, claims, and labels will sharpen as drafting proceeds; nothing here is finished. <span class="mono">The avenue cards above are still placeholders &mdash; they get populated from this outline next.</span></p>
+  <ol class="outline">
+    <li><b>1 &middot; The standing</b> &mdash; where the US and China economies actually sit, and the strategic case for automated reshoring. <span class="s-chip s-open">SOURCED-PENDING</span> <span class="s-chip s-open">OPEN-ARGUMENT</span> <span class="mono">C01&ndash;C02 &middot; C11</span></li>
+    <li><b>2 &middot; The engine</b> &mdash; AI/robotics productivity (magnitude disputed) and the Wright's-Law cost curve under the loop. <span class="s-chip s-open">CONTESTED-MAGNITUDE</span> <span class="s-chip s-open">SOURCED-PENDING</span> <span class="s-chip s-forecast">FORECAST</span> <span class="mono">C03 &middot; C12 &middot; C08</span></li>
+    <li><b>3 &middot; Who captures the gains</b> &mdash; UBI evidence, social-wealth-fund precedent, and a cautionary pivot. <span class="s-chip s-open">SOURCED-PENDING</span> <span class="mono">C04&ndash;C06</span></li>
+    <li><b>4 &middot; The renewal prescription</b> &mdash; social wealth fund + universal basic dividend + land value tax, each carrying its own counter-view. <span class="s-chip s-open">OPEN-ARGUMENT</span> <span class="mono">C07</span></li>
+    <li><b>5 &middot; The governance question</b> &mdash; democracy-preserving vs techno-authoritarian, entered as a contested pair at equal prominence. <span class="s-chip s-open">OPEN-UNVERIFIED &middot; CONTESTED</span> <span class="mono">C09 / C10</span></li>
+  </ol>
+</section>
+
 <div class="publish-cta">
   <div class="pc-text">
     <p class="pc-h">Want to publish like this?</p>
@@ -240,6 +256,10 @@ const STATUS = {
   "OPEN-UNVERIFIED": {cls:"s-open",     tcls:"t-open"},
   "FORECAST":        {cls:"s-forecast", tcls:"t-forecast"},
   "REPORTED":        {cls:"s-reported", tcls:"t-reported"},
+  // dossier-local amber statuses (below verified; never render as ESTABLISHED green)
+  "SOURCED-PENDING":      {cls:"s-open", tcls:"t-open"},
+  "CONTESTED-MAGNITUDE":  {cls:"s-open", tcls:"t-open"},
+  "OPEN-ARGUMENT":        {cls:"s-open", tcls:"t-open"},
 };
 const statusMeta = s => STATUS[s] || {cls:"s-default", tcls:""};
 

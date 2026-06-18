@@ -35,6 +35,7 @@ Claim types and their mandated verifiers:
 | NOVEL | nobody has done X | Phase 0 search record + "to our knowledge" phrasing |
 | EST | engineering projection | script + clearly labeled as projection in text |
 | FORECAST | a labeled author estimate (subjective probability/judgment) with stated reasoning | no executable check — its verifier IS a mandatory dated, falsifiable signpost that later resolves it true/refuted |
+| ARGUMENT | an inherently unfalsifiable normative/policy claim | no executable check — its verifier IS the presence of a stated, good-faith counter-view; carries status OPEN-ARGUMENT |
 
 FORECAST is a claim TYPE, not a status: a FORECAST carries status OPEN-UNVERIFIED
 until its dated signpost arrives and resolves it true or refuted. The signpost
@@ -114,6 +115,20 @@ reported only on a television program → REPORTED — NON-SCIENTIFIC SOURCE,
 UNCORROBORATED, with the source named, its non-scientific nature stated, and the
 mundane candidate (e.g. uncharacterized RF interference, or that no instrumented
 measurement exists to assess it) stated alongside with equal prominence.
+
+**Dossier-local status extensions (Econ-Renewal).** This is a policy / political-economy
+dossier, so it registers three labels the scientific ladder above does not name. Each is
+honest about sitting below "verified" and renders as the open/amber chip — never the green
+ESTABLISHED chip (see the `STATUS` map in index.html):
+- **SOURCED-PENDING** — a CITE-type claim whose source is attached but not yet checked by the
+  Phase 3 citation audit; sourced and recorded, not asserted as established. Upgrades to
+  verified only when `citation_audit.md` runs.
+- **CONTESTED-MAGNITUDE** — the cited sources agree the effect exists but disagree on its size;
+  the dispersion itself is the recorded fact, and no single estimate is asserted as the answer.
+- **OPEN-ARGUMENT** — the status carried by an ARGUMENT-type claim: an unfalsifiable normative
+  position, admissible only with its strongest counter-view stated inline; it gets no vote on
+  any empirical claim's status. (An OPEN-UNVERIFIED claim may also be tagged "/ CONTESTED" when
+  it is entered as a pair with an equal-prominence counter-claim, as with the governance thesis.)
 
 ## Phase 2 — Drafting (AI-led)
 
