@@ -195,6 +195,53 @@ like any other manufactured good.</p>
 <span class="tag">FORECAST</span><b>Labeled estimate (ledger C08):</b> the <i>system-level</i> extrapolation — factories building factories building better robots, a loop that <i>would</i> drive unit labor cost toward collapse — reaches <i>beyond</i> the experience-curve data, which describes cost-per-unit <em>conditional on production continuing to double</em> but does not itself manufacture the doublings. So the runaway is a forecast, not a fact. <b>Signpost:</b> by <b>2031</b>, a manufacturing unit-labor-cost + TFP threshold <span class="mono">[specific numbers TBD]</span>. <b>Counter-view (the bridge):</b> the loop runs on production, and production runs on demand — Wright's Law is silent on where demand comes from once the displaced workforce can no longer buy the output. Broad income is therefore the demand input that keeps the curve descending, not charity bolted onto the machine; this is why the production half and the distribution half of this dossier are one argument, not two.
 </div>
 
+<p>But a loop that <i>would</i> compound is not a loop that yet runs. Granting the mechanism, the live
+question for a ~2030 horizon is whether the US can physically stand the capacity up — and there the
+binding constraints split cleanly. <b>Compute</b> is gated by domestic <i>power and grid</i>:
+data-center grid demand runs ~61.8&nbsp;GW (2025) toward ~134.4&nbsp;GW (2030), the DOE projects ~100&nbsp;GW
+of new peak by 2030 (about half from data centers), ~2,300&nbsp;GW sits stuck in
+<button class="term" data-d="An interconnection queue is the waiting line a new power plant or large load (like a data center) joins to get studied and physically hooked up to the grid. Operators assess each request's reliability impact before approving it, and the backlog has ballooned to thousands of gigawatts waiting years. The surprising part: the queue, not the ability to build generation, is often the real bottleneck.">interconnection queues</button>,
+and a new connection takes 4&ndash;10 years against 2&ndash;3-year builds
+<button class="cite" data-c="power">S&amp;P 451 / DOE / Goldman '25</button>. <b>Robotics</b> is gated not
+by domestic power but by <i>China's component supply chain</i>: China controls ~88&ndash;91% of refined
+rare earths and ~90% of magnet processing, an Optimus Gen&nbsp;2 costs roughly 3&times; more without
+Chinese suppliers ($46k&nbsp;&rarr;&nbsp;$131k bill of materials), and Western mine development averages
+~17.8 years — not decouplable by 2030
+<button class="cite" data-c="components">McKinsey / Morgan Stanley '26</button>. Cutting across both is
+a <b>skilled-trades</b> shortage: electricians are now named the top data-center bottleneck by Nvidia
+and Microsoft, with ~300k+ needed against ~20k/yr retiring, a construction shortfall of ~340k&ndash;499k
+by end-2026, and electrical work running 45&ndash;70% of build cost
+<button class="cite" data-c="trades">JLL / BLS / Fortune</button>. These are SOURCED-PENDING anchors
+(ledger C13&ndash;C15).</p>
+
+<p>One finding reorders the usual intuition: capital is <i>not</i> the binding input. Across the
+build-out the gating constraints are named, repeatedly, as power, then labor, then components —
+"not capital or land"
+<button class="cite" data-c="capital">Datacenter Knowledge / Goldman&middot;Hanwha</button>
+(ledger C16). That is what drives the dossier's lever ranking:</p>
+
+<div class="openclaim">
+<span class="tag">OPEN-ARGUMENT</span><b>Lever ranking for a ~2030 deployment (ledger C17):</b> rank the levers by leverage, not by familiarity. <b>(1)&nbsp;Bottleneck-removal</b> first — <button class="term" data-d="Load interconnection is the grid-side approval for a large new electricity *consumer* (here, a data center) to plug in, as distinct from generator interconnection for new supply. Reforming it — at FERC and the regional grid operators — means faster, more standardized study and approval of big loads. It matters because for AI compute the load queue, not the ability to generate power, is increasingly the gate.">FERC load-interconnection reform</button>, onsite generation, and demand-flexible siting attack the constraint that actually binds. <b>(2)&nbsp;Federal industrial policy</b> second — a DoD-equity/offtake model, recycling plus allied sourcing plus rare-earth-free magnets, and trades training via vocational Pell. <b>(3)&nbsp;Private capital and market design</b> last, precisely because capital is abundant and not the gate. <b>Counter-view:</b> state-led bottleneck-clearing carries its own risks — misallocation and regulatory capture; markets may in fact clear power faster than FERC reform does; and a ~2030 horizon may simply be infeasible regardless of which lever is pulled first. The ranking is a bet on where leverage sits, not a guarantee it can be applied in time.
+</div>
+
+<p>Honesty demands a stress-test of the sovereignty argument (C11): on the robotics half, the US is
+<i>not</i> sovereign today. The rare-earth and magnet dependence above is the soft spot — a
+<button class="term" data-d="An NdFeB (neodymium-iron-boron) magnet is the high-strength permanent magnet used in electric-motor and robot actuators, EVs, and wind turbines. They depend on rare-earth elements whose mining and especially *processing* are concentrated in China. The surprise: it is not the raw ore but the processing and magnet-making step where the dependence is most acute and hardest to reroute.">rare-earth (NdFeB) magnet</button>
+supply chain that runs through China at almost every step. That is not a refutation of the reshoring
+argument; it is the reason it is <i>urgent</i>. A sovereign compute base bolted to an
+adversary-controlled actuator supply is half a base — and the half that is missing is the physical
+one.</p>
+
+<div class="forecast">
+<span class="tag">FORECAST</span><b>Labeled estimate (ledger C18):</b> the US <i>would</i> clear the power-grid and skilled-trades constraints enough to support meaningful AI+robotics capacity by ~<b>2030</b> — the achievable horizon, hard but within reach if the bottleneck levers are pulled. <b>Signpost (2030):</b> <span class="mono">[grid capacity-add TBD] + [trades-gap-closure TBD]</span>.
+</div>
+
+<div class="forecast">
+<span class="tag">FORECAST</span><b>Labeled estimate (ledger C19):</b> domestic and allied rare-earth-magnet supply <i>would</i> cover only <span class="mono">[X% TBD]</span> of US robotics-component demand by <b>2030</b> — the honestly harder call. Given the ~17.8-year mine-development timelines <button class="cite" data-c="components">McKinsey / Morgan Stanley '26</button> it <i>would</i> likely be only partially met; the signpost is set to <i>reveal</i> the residual China-dependence, not to flatter it. <b>Signpost (2030):</b> <span class="mono">[domestic + allied share of magnet demand TBD]</span>.
+</div>
+
+<p class="punch">Clear these constraints and you get capacity — but Wright's Law says capacity only compounds with demand, and where the demand comes from once the work is automated is the distribution question. That is the next section.</p>
+
 <h2><span class="num">03</span>WHO CAPTURES THE GAINS</h2>
 
 <p>If the engine delivers, who gets the output? Three sourced data points frame the
@@ -261,7 +308,11 @@ const CITES = {
   ubi: {who:"OpenResearch / Bloomberg; Fortune (2024)", what:"OpenResearch's $1,000/month, three-year unconditional cash trial found recipients stayed employed, worked slightly fewer hours, and spent more on needs, with well-being not clearly improved. Real evidence on how a basic-income 'gain-sharing' channel actually behaves \u2014 cutting against the strongest both-sides priors.", src:"Recon-gathered; ledger C04 \u2014 pending citation audit"},
   swf: {who:"People's Policy Project; Jacobin; The Intercept", what:"Documents the Alaska Permanent Fund (1976), which pays residents an annual dividend from a sovereign wealth fund, and Matt Bruenig's 'American Solidarity Fund' proposal to scale that model nationally. Supplies the existing precedent the renewal prescription's social-wealth-fund component builds on.", src:"Recon-gathered; ledger C05 \u2014 pending citation audit"},
   worldcoin: {who:"Biometric Update; AMBCrypto (2023\u20132026)", what:"World/Worldcoin launched in 2023 with crypto-UBI framing, then pivoted to enterprise proof-of-humanity by 2026, dropping the UBI goal. A cautionary case on how a 'UBI' label can be marketing that later evaporates \u2014 relevant to which gain-sharing mechanisms are credible.", src:"Recon-gathered; ledger C06 \u2014 pending citation audit"},
-  wright: {who:"Nagy, Farmer, Bui & Trancik (2013); Lafond et al. (2018)", what:"Tested Wright's Law \u2014 unit cost falls a constant % per doubling of cumulative production \u2014 against 62 technologies (and a later ~51), finding technological cost genuinely forecastable with Wright's Law the best performer; a WWII demand shock serves as a natural experiment showing cumulative production causes the cost decline, not the reverse. Gives the recursive-loop claim a documented causal mechanism rather than a hand-wave.", src:"Recon-gathered; ledger C12 \u2014 PLoS ONE (2013); Technological Forecasting & Social Change (2018); Our World in Data \u2014 pending citation audit"}
+  wright: {who:"Nagy, Farmer, Bui & Trancik (2013); Lafond et al. (2018)", what:"Tested Wright's Law \u2014 unit cost falls a constant % per doubling of cumulative production \u2014 against 62 technologies (and a later ~51), finding technological cost genuinely forecastable with Wright's Law the best performer; a WWII demand shock serves as a natural experiment showing cumulative production causes the cost decline, not the reverse. Gives the recursive-loop claim a documented causal mechanism rather than a hand-wave.", src:"Recon-gathered; ledger C12 \u2014 PLoS ONE (2013); Technological Forecasting & Social Change (2018); Our World in Data \u2014 pending citation audit"},
+  power: {who:"S&P 451 Research; DOE; Goldman Sachs; Brookings; WEF/DNV (2025)", what:"Data-center grid demand is projected to roughly double (~61.8 GW in 2025 toward ~134.4 GW by 2030), the DOE sees ~100 GW of new peak by 2030 with about half from data centers, and ~2,300 GW sits in interconnection queues where a hookup takes 4\u201310 years against 2\u20133-year builds. Establishes power/grid interconnection \u2014 not generation or money \u2014 as the dominant binding constraint on US AI compute.", src:"Recon-gathered; ledger C13 \u2014 pending citation audit"},
+  components: {who:"McKinsey; Morgan Stanley BluePaper (2026); Merics", what:"China controls ~88\u201391% of refined rare earths and ~90% of magnet processing; a Tesla Optimus Gen 2 runs ~3\u00d7 costlier without Chinese suppliers ($46k\u2192$131k bill of materials), and Western mine development averages ~17.8 years. Shows the robotics half of the build-out is gated by an adversary-controlled physical supply chain that is not decouplable by 2030.", src:"Recon-gathered; ledger C14 \u2014 pending citation audit"},
+  trades: {who:"JLL; BLS; Fortune", what:"Electricians are named the top data-center build bottleneck by Nvidia and Microsoft, with ~300k+ needed against ~20k/yr retiring, a construction-labor shortfall of ~340k\u2013499k by end-2026, and electrical work at 45\u201370% of build cost. A skilled-trades shortage that cuts across both the compute and robotics build-outs.", src:"Recon-gathered; ledger C15 \u2014 pending citation audit"},
+  capital: {who:"Datacenter Knowledge; Goldman/Hanwha", what:"Industry accounts repeatedly name the gating constraints as power, then labor, then components \u2014 explicitly 'not capital or land.' This is the finding that puts private capital and market design last in the lever ranking: money is abundant and not the bottleneck.", src:"Recon-gathered; ledger C16 \u2014 pending citation audit"}
 };
 // one shared toggle behavior for terms and citations
 function closeCard(btn){ const c = btn._card; if(c){ c.remove(); btn._card = null; btn.setAttribute('aria-expanded','false'); } }
