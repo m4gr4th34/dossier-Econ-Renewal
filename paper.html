@@ -298,11 +298,55 @@ and refuses to resolve (ledger C09 / C10).</p>
 
 <h2><span class="num">04</span>THE RENEWAL PRESCRIPTION</h2>
 
-<p>The argument the dossier will make — and label as argument, not fact:</p>
+<p>Section&nbsp;3 left a baton: broad income is the <i>demand input</i> the production loop needs, not a
+transfer away from it (ledger C22). This section picks it up and asks the engineering question — by what
+<i>concrete mechanism</i>? The dossier's answer is the bundled "plug" it has carried from the start, and
+labels as argument, not fact:</p>
 
 <div class="openclaim">
 <span class="tag">OPEN-ARGUMENT</span><b>Prescription (ledger C07):</b> a social wealth fund + a universal basic dividend + a land value tax, together, as the "plug" for wealth's escape into equities and land. This is a policy argument, not a measured result. Each component is entered with its own strongest counter-view — fund governance and capture risk; dividend inflation pass-through; land-value-tax assessment and transition costs — and the dossier rides none of them as settled.
 </div>
+
+<p>Start with the fund. In the design Matt Bruenig sets out, every citizen holds one non-transferable
+share, and the fund pays a universal basic dividend out of its returns — Bruenig sets the dividend at
+roughly 4&ndash;5% of a five-year moving average of fund value. One illustrative calculation he gives: a
+$10&nbsp;trillion fund throwing off ~$400&nbsp;billion a year, or "several thousand dollars per person per
+year" <button class="cite" data-c="swfmech">Bruenig / PPP; BIEN</button> (ledger C24). Capitalization is
+gradual and can draw on many streams — corporate share levies, wealth and inheritance taxes, leasing
+public assets, carbon and financial-transaction taxes, even money creation. For scale, Alaska's Permanent
+Fund holds ~$60&nbsp;billion, about 113% of state GDP; a US-equivalent ratio would be on the order of
+$22.6&nbsp;trillion — which is exactly why this is a <i>gradual accumulation with a modest near-term
+dividend</i>, not an overnight windfall. Every figure here is an attributed proposal parameter, not the
+dossier's own projection.</p>
+
+<p>Now the land value tax. Its appeal is efficiency: because the supply of land is fixed, a tax on its
+unimproved value creates almost no
+<button class="term" data-d="Deadweight loss is the economic value destroyed when a tax (or other distortion) discourages mutually beneficial activity — production or trade that would have happened but doesn't because the tax changed behavior. Most taxes cause some; the surprise with a land value tax is that, because land can't be produced or hidden, the quantity doesn't shrink, so there's essentially none.">deadweight loss</button>,
+the burden stays on the landowner rather than passing through to tenants, and it captures the
+<button class="term" data-d="Economic rent is income earned from owning a scarce, fixed asset (classically land) beyond what is needed to bring it into use — value that flows to the owner purely from scarcity and location, not from any productive effort. Taxing it is attractive precisely because you can take it without discouraging any productive activity.">economic rent</button>
+that otherwise accrues untaxed — a property economists from Adam Smith to Henry George prized, with
+unusually broad cross-ideological acceptance among economists who know it
+<button class="cite" data-c="lvteff">medianism; Nielsson (Syracuse); American Affairs</button> (ledger
+C25). But the efficiency case never travels alone. It has three documented holes: <b>assessment</b> —
+separating land value from the value of improvements on it is genuinely hard; the <b>search-and-discovery
+distortion</b> — taxing away the reward for discovering a better use of land can discourage that discovery
+(Caplan-Gochenour); and <b>transition</b> — imposing it on current owners expropriates people who bought
+at untaxed prices, a Tullock transitional-gains trap that forces a decade-long phase-in
+<button class="cite" data-c="lvtholes">Caplan / Econlib; Econlib (transition)</button> (ledger C26).</p>
+
+<p>How much could it raise? A back-of-envelope figure sometimes cited puts the US land base around
+$30&ndash;35&nbsp;trillion and a broad LVT at on the order of ~14% of the relevant base — but the dossier
+flags that as exactly that: back-of-envelope and contested, sensitive to assessment, to the
+<button class="term" data-d="ATCOR — 'all taxes come out of rents' — is the proposition that cutting other taxes raises land rents (and so land values), because the money people save on those taxes gets capitalized into what they will pay for location. Its relevance to a land value tax: as an LVT replaces other taxes, the rent base it taxes can grow, which proponents say expands its revenue capacity — a contested claim, not a settled one.">ATCOR</button>
+effect, and to the phase-in path. It is illustrative, not a projection.</p>
+
+<div class="openclaim">
+<span class="tag">OPEN-ARGUMENT</span><b>Design logic of the prescription (ledger C27):</b> the pieces fit a sequence. <b>(a)</b> Fund the floor from the <i>asset base</i>, not currency debasement — the escape-gap logic of section 3: an inflation-funded transfer leaks to asset-holders, an ownership stake does not. <b>(b)</b> As automation raises the capital share of income, the social wealth fund routes that rising share to high-MPC citizen-owners — the direct tie-back to the demand-input argument (C22). <b>(c)</b> Use the land value tax as the land-specific plug, phased in to absorb the transition shock. <b>(d)</b> Because the dividend scales with fund size, this is deliberately gradual — not an overnight UBI. <b>Counter-view:</b> the ~$22.6&nbsp;trillion US-equivalent fund (the attributed figure above, ledger C24) cannot be accumulated quickly, so near-term dividends are modest; public capital allocation invites politicization and capture; the LVT's assessment, search-distortion, and transition costs are all real; wealth and market-cap levies face asset-mobility and valuation problems; and a federal LVT or wealth tax raises an unresolved US constitutional direct-tax / apportionment question — flagged here as an <i>open question</i>, not a settled holding. The prescription is a coherent design bet, labeled as one, with its load-bearing objections in view.
+</div>
+
+<p class="punch">Whether a mechanism like this is adequate — whether it can actually keep the gains broadly
+held as the machines scale — is the hinge the governance question turns on: broadly held, or narrowly
+captured (ledger C09 / C10).</p>
 
 <h2><span class="num">05</span>THE GOVERNANCE QUESTION</h2>
 
@@ -353,7 +397,10 @@ const CITES = {
   trades: {who:"JLL; BLS; Fortune", what:"Electricians are named the top data-center build bottleneck by Nvidia and Microsoft, with ~300k+ needed against ~20k/yr retiring, a construction-labor shortfall of ~340k\u2013499k by end-2026, and electrical work at 45\u201370% of build cost. A skilled-trades shortage that cuts across both the compute and robotics build-outs.", src:"Recon-gathered; ledger C15 \u2014 pending citation audit"},
   capital: {who:"Datacenter Knowledge; Goldman/Hanwha", what:"Industry accounts repeatedly name the gating constraints as power, then labor, then components \u2014 explicitly 'not capital or land.' This is the finding that puts private capital and market design last in the lever ranking: money is abundant and not the bottleneck.", src:"Recon-gathered; ledger C16 \u2014 pending citation audit"},
   mpc: {who:"Jappelli & Pistaferri (2014); Stiglitz (2019); Summers (2015); EPI; Fed FEDS (2018)", what:"Finds the marginal propensity to consume falls steeply with income \u2014 the top group's MPC out of transitory income is roughly zero, with about half the population near zero \u2014 so shifting income upward mechanically removes consumption from the economy. Stiglitz, and a Summers revival of Hansen, frame this as structural underconsumption; it is the empirical hinge of the demand argument.", src:"Recon-gathered; ledger C20 \u2014 pending citation audit"},
-  contested: {who:"Auclert & Rognlie (2016/2020), NBER w24280", what:"Find the long-run output effect of inequality is small when inequality is fixed household heterogeneity but around 2% when it operates through income risk/volatility, and note that a falling labor share can mitigate stagnation through one channel while other demand components and policy can offset the rest. Establishes that the macro magnitude of the inequality\u2192demand drag is genuinely contested, not settled.", src:"Recon-gathered; ledger C21 \u2014 pending citation audit"}
+  contested: {who:"Auclert & Rognlie (2016/2020), NBER w24280", what:"Find the long-run output effect of inequality is small when inequality is fixed household heterogeneity but around 2% when it operates through income risk/volatility, and note that a falling labor share can mitigate stagnation through one channel while other demand components and policy can offset the rest. Establishes that the macro magnitude of the inequality\u2192demand drag is genuinely contested, not settled.", src:"Recon-gathered; ledger C21 \u2014 pending citation audit"},
+  swfmech: {who:"Bruenig / People's Policy Project; BIEN; In These Times; Democracy Collaborative", what:"Sets out social-wealth-fund mechanics: one non-transferable share per citizen and a universal basic dividend of ~4\u20135% of a five-year moving average of fund value, with an illustrative $10T fund paying ~$400B/yr ('several thousand per person per year') and capitalization from share levies, wealth/inheritance taxes, asset leasing, carbon/transaction taxes, or money creation. Alaska's ~$60B fund (\u2248113% of state GDP) implies a US-equivalent on the order of $22.6T \u2014 so the dividend is gradual and modest near-term, not an overnight windfall.", src:"Recon-gathered; ledger C24 \u2014 proposal parameters, not the dossier's projection \u2014 pending citation audit"},
+  lvteff: {who:"medianism/Wikipedia; encyclopedia.pub; Nielsson (Syracuse); American Affairs", what:"Lays out the land-value-tax efficiency case: because land supply is fixed, a tax on unimproved land value causes essentially no deadweight loss, the burden stays on the owner rather than passing to tenants, and it captures economic rent \u2014 a point with unusually broad cross-ideological acceptance among economists familiar with it. The efficiency claim is presented only alongside its holes (C26).", src:"Recon-gathered; ledger C25 \u2014 pending citation audit"},
+  lvtholes: {who:"Caplan / Econlib (Caplan-Gochenour); Econlib (transition); Grokipedia", what:"Documents the land-value-tax holes: assessment difficulty in separating land from improvements; a search-and-discovery distortion where taxing the reward for finding better land uses discourages that discovery (Caplan-Gochenour); and a transition problem \u2014 expropriating current owners who bought at untaxed prices (a Tullock transitional-gains trap) \u2014 that forces a decade-long phase-in. The counterweight to the efficiency case in C25.", src:"Recon-gathered; ledger C26 \u2014 pending citation audit"}
 };
 // one shared toggle behavior for terms and citations
 function closeCard(btn){ const c = btn._card; if(c){ c.remove(); btn._card = null; btn.setAttribute('aria-expanded','false'); } }
