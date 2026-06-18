@@ -29,7 +29,7 @@ from the moment it lands — an unlabeled ballpark number is the violation, a
 labeled one is not.**
 
 ## What this project is
-The strategy room for **Dossier [NNN / short-name]: [ONE-LINE TOPIC]**.
+The strategy room for **Dossier Econ-Renewal: A framework for rejuvenating the American economy with AI and robotics — including the distributional question (who captures the gains) and the governance question (how democratic institutions hold up under that disruption).**
 Connected repo: this synced repository. The dossier's three reading
 surfaces (interactive, self-explaining, audit trail), its manuscript, its
 verification script, and its claim ledger all live here.
@@ -146,7 +146,29 @@ Because this constitution is a repo file, upgrading it is just part of that
 same machinery sync — there is nothing separate to re-paste into the Project.
 
 ## Standing context (edit per dossier)
-- [List this dossier's open claims by ledger id.]
-- [List current open red-team findings.]
-- [Note anything a fresh session must know: the topic's sensitivities, the
-  key prior work, the boldest claims and exactly how they're labeled.]
+- **Open claims:** None entered yet — built during recon. Anticipated structure:
+  documented economic/automation/productivity/inequality data asserted as CITE
+  with sources; the framework's prescriptions and the governance arguments as
+  OPEN argument/forecast, each with its strongest counter-view built in.
+- **Open red-team findings:** None yet.
+- **Anything a fresh session must know:**
+  - **This is a policy + political-economy dossier, not an empirical one.** Most
+    prescriptions are unfalsifiable argument and must be **LABELED as argument,
+    not dressed as fact.** Only the empirical anchors (automation/productivity/
+    inequality/labor data) get cited; everything built on top of them is
+    explicitly argument or FORECAST.
+  - **Framing discipline on the governance question is critical.** The thesis
+    "is democracy worth saving / declining education and productivity" must be
+    treated as a **CONTESTED, labeled claim** with its strongest
+    counter-arguments presented **in the same breath** — never as a settled
+    premise the dossier rides. The premise itself gets examined and labeled, not
+    assumed.
+  - **The model to emulate:** believe boldly, publish defensibly. Provocative
+    framing is fine; the premise behind it is examined and labeled, never
+    smuggled in as fact. Include a labeled counter-view on the governance thesis
+    the way the QC dossier did on its China and dominance theses.
+  - **Truth in labeling cuts both ways:** state the documented economic data
+    plainly as CITE — that is bedrock — but keep every prescription and every
+    governance judgment in the OPEN/argument bucket, hedged and counter-viewed.
+    That separation is what makes the dossier undismissable rather than
+    polemical.

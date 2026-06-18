@@ -122,4 +122,34 @@ labeled one is not.**
 - claim_ledger.csv  — every claim, typed, with honest status
 
 ## Standing context
-- TODO: list this dossier's open claims and review posture here.
+This dossier — **Dossier Econ-Renewal: A framework for rejuvenating the American
+economy with AI and robotics — including the distributional question (who
+captures the gains) and the governance question (how democratic institutions
+hold up under that disruption).**
+
+- **Open claims:** None entered yet — built during recon. Anticipated structure:
+  documented economic/automation/productivity/inequality data asserted as CITE
+  with sources; the framework's prescriptions and the governance arguments as
+  OPEN argument/forecast, each with its strongest counter-view built in.
+- **Open red-team findings:** None yet.
+- **Anything a fresh session must know:**
+  - **This is a policy + political-economy dossier, not an empirical one.** Most
+    prescriptions are unfalsifiable argument and must be **LABELED as argument,
+    not dressed as fact.** Only the empirical anchors (automation/productivity/
+    inequality/labor data) get cited; everything built on top of them is
+    explicitly argument or FORECAST.
+  - **Framing discipline on the governance question is critical.** The thesis
+    "is democracy worth saving / declining education and productivity" must be
+    treated as a **CONTESTED, labeled claim** with its strongest
+    counter-arguments presented **in the same breath** — never as a settled
+    premise the dossier rides. The premise itself gets examined and labeled, not
+    assumed.
+  - **The model to emulate:** believe boldly, publish defensibly. Provocative
+    framing is fine; the premise behind it is examined and labeled, never
+    smuggled in as fact. Include a labeled counter-view on the governance thesis
+    the way the QC dossier did on its China and dominance theses.
+  - **Truth in labeling cuts both ways:** state the documented economic data
+    plainly as CITE — that is bedrock — but keep every prescription and every
+    governance judgment in the OPEN/argument bucket, hedged and counter-viewed.
+    That separation is what makes the dossier undismissable rather than
+    polemical.
