@@ -34,9 +34,11 @@
   .kicker{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
   .kicker.teal{color:var(--teal)}.kicker.coral{color:var(--coral)}.kicker.violet{color:var(--violet)}
   p.lede{color:var(--ink2);max-width:66ch;margin-top:6px}
-  ol.outline{max-width:74ch;margin:16px 0;padding-left:22px}
+  ol.outline{max-width:74ch;margin:8px 0 16px;padding-left:22px}
   ol.outline li{margin:9px 0;line-height:1.5}
   ol.outline li .s-chip{margin:0 2px;vertical-align:1px}
+  .outline-part{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--coral);font-weight:600;margin:22px 0 2px}
+  .outline-part b{color:var(--ink)}
 
   /* ===== survey landscape — card grid (survey-default keystone) ===== */
   .av-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-top:18px}
@@ -208,7 +210,12 @@
 <section id="outline">
   <div class="kicker coral">DRAFT · RECON OUTLINE</div>
   <h2>Planned sections <span class="s-chip s-open">DRAFT</span></h2>
-  <p class="lede">Reconnaissance-stage skeleton, mapped to the public <a href="dossier.html">claim ledger</a> (rows C01&ndash;C19). Sections, claims, and labels will sharpen as drafting proceeds; nothing here is finished. <span class="mono">The avenue cards above are still placeholders &mdash; they get populated from this outline next.</span></p>
+  <p class="lede">Reconnaissance-stage skeleton, mapped to the public <a href="dossier.html">claim ledger</a> (rows C01&ndash;C33), now in two parts. Sections, claims, and labels will sharpen as drafting proceeds; nothing here is finished. <span class="mono">The avenue cards above are still placeholders &mdash; they get populated from this outline next.</span></p>
+  <p class="outline-part"><b>Part A</b> &middot; the asymmetric jumpstart</p>
+  <ol class="outline">
+    <li><b>A &middot; The flagship play</b> &mdash; refuse the premise; the EV/solar lesson (fund cumulative production, not demand); six non-consensus pillars ranked by doability with compute-for-equity as the A&harr;B keystone; the AMC "first million"; obsolete-the-input; orbital/lunar named post-2030. <span class="s-chip s-open">SOURCED-PENDING</span> <span class="s-chip s-open">OPEN-ARGUMENT</span> <span class="s-chip s-forecast">FORECAST</span> <span class="mono">C28&ndash;C33</span></li>
+  </ol>
+  <p class="outline-part"><b>Part B</b> &middot; the full picture (substantiates Part A)</p>
   <ol class="outline">
     <li><b>1 &middot; The standing</b> &mdash; where the US and China economies actually sit, and the strategic case for automated reshoring. <span class="s-chip s-open">SOURCED-PENDING</span> <span class="s-chip s-open">OPEN-ARGUMENT</span> <span class="mono">C01&ndash;C02 &middot; C11</span></li>
     <li><b>2 &middot; The engine &amp; deployment pathway</b> &mdash; AI/robotics productivity (magnitude disputed), the Wright's-Law cost curve, and the binding constraints (power, components, trades) + ranked levers to actually deploy by ~2030. <span class="s-chip s-open">CONTESTED-MAGNITUDE</span> <span class="s-chip s-open">SOURCED-PENDING</span> <span class="s-chip s-open">OPEN-ARGUMENT</span> <span class="s-chip s-forecast">FORECAST</span> <span class="mono">C03 &middot; C12&ndash;C16 &middot; C17 &middot; C08, C18&ndash;C19</span></li>
